@@ -9,7 +9,7 @@ json_data=stream_data.json()
 products_list=json_data["products"]
 data=[]
 for product in products_list:
-    data.append({"id":product["id"],"name":product["title"],"price":product["price"],"brand":product["brand"]})
+    data.append({"id":product["id"],"name":product["title"],"price":product["price"],"brand":product["brand"],"avial":True})
 
 client=pymongo.MongoClient()
 db=client["api_products"]
